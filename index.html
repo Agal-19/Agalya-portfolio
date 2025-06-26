@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Agalya Thiruppathi Rajan Portfolio</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    background-color: #000;
+    color: #e0e0e0;
+  }
+
+  nav {
+    background-color: #90caf9;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #fff;
+  }
+
+  section {
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #90caf9;
+  }
+
+  .box {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 1 250px;
+    box-shadow: 0 0 10px #90caf9;
+    transition: 0.3s;
+  }
+
+  .box:hover {
+    transform: translateY(-5px);
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  h1, h2, h3 {
+    color: #90caf9;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .contact a {
+    color: #90caf9;
+    text-decoration: none;
+  }
+
+  button {
+    background-color: #90caf9;
+    color: black;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #1a1a1a;
+    color: #90caf9;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#achievements">Achievements</a>
+</nav>
+
+<section id="home">
+  <div class="header">
+    <div style="flex: 1; padding-right: 1rem;">
+      <h1>Agalya</h1>
+      <p>As a dedicated final-year student, I am eager to begin my professional journey with an organization that values learning, innovation, and growth. I look forward to gaining practical experience, expanding my knowledge, and making meaningful contributions to impactful projects.</p>
+    </div>
+    <div style="flex: 1; display: flex; justify-content: center;">
+      <img src="images/agal.jpg.jpeg" alt="Agalya Picture" width="250">
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills & Tools</h2>
+  <div class="grid">
+    <div class="box">Web Development: HTML, CSS, JS</div>
+    <div class="box">Language: Python</div>
+    <div class="box">Database: SQL</div>
+    <div class="box">AI & ML Techniques</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Project</h2>
+  <div class="box">
+    <h3>Retro Car Booking Website</h3>
+    <p>Developed a car booking website using HTML and CSS. Used Excel for storing booking data and integrated EmailJS to send confirmation emails to users, enabling basic backend functionality without a server. Technologies: HTML, CSS, JS, Excel, EmailJS</p>
+  </div>
+
+  <div class="box">
+    <h3>Antiox - Pack Analyser</h3>
+    <p>Developed a predictive system using Logistic Regression to identify antioxidant types in packaging materials, supporting sustainable product design. Applied Linear Regression to estimate optimal proportions of glycerin, gelatin, and agar for bioplastic covers. Integrated classification and regression models for smart, eco-friendly packaging.</p>
+  </div>
+
+  <div class="box">
+    <h3>Text-to-Speech</h3>
+    <p>Integrated Google Cloud Text-to-Speech (TTS) API to convert text inputs into natural sounding speech for real-time voice call communication, with customizable voice settings to ensure a personalized and inclusive experience.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Internship</h2>
+  <div class="box">
+    <h3>MERN Stack Internship</h3>
+    <p>Completed a comprehensive web development internship focused on creating dynamic and responsive websites. Gained experience in designing interactive user interfaces and deploying modern web applications.</p>
+    <div class="grid">
+      <img src="images/intern.jpg.jpeg" alt="Internship Screenshot 1" width="300">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="grid">
+    <div class="box">
+      <h3>B.TECH - Artificial Intelligence and Data Science (2022–2026)</h3>
+      <p>Sethu Institute Of Technology: CGPA - 8.5</p>
+    </div>
+    <div class="box">
+      <h3>Higher Secondary School Certificate (2021–2022)</h3>
+      <p>St. Joseph Matric Higher Secondary School: 88%</p>
+    </div>
+    <div class="box">
+      <h3>Secondary School Certificate (2019–2020)</h3>
+      <p>KNU Matriculation School: 98%</p>
+    </div>
+  </div>
+
+  <h2>Certifications</h2>
+  <div class="grid">
+    <img src="images/nptel silver.jpg.jpeg" alt="Cert 2" width="200">
+    <img src="images/nptel elite.jpg.jpeg" alt="Cert 3" width="200">
+    <img src="images/certificate2.jpg.jpeg" alt="Cert 4" width="200">
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <div class="box">
+    <h3>SQL Master</h3>
+    <p>Won First Place in Master Query Madness at TCE College with a cash prize.</p>
+    <img src="images/certificate1.jpg.jpeg" alt="Achievement Image" width="200">
+  </div>
+  <div class="box">
+    <h3>NABARD MABIF</h3>
+    <p>Won 1st place in Jallikattu 4.0, organized by NABARD–Madurai Agribusiness Incubation Forum (MABIF), with a ₹25,000 cash prize for an innovative agribusiness solution.</p>
+    <img src="images/certificate3.jpg.jpeg" alt="Achievement Image" width="200">
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div class="contact">
+    <p><strong>Email:</strong> agalyathiruppathirajan@gmail.com</p>
+    <p><strong>Phone:</strong> 6383575832</p>
+    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/agalya-thiruppathirajan" target="_blank">linkedin.com/in/agalya-thiruppathirajan</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Agal-19" target="_blank">github.com/Agal-19</a></p>
+  </div>
+</section>
+
+<section style="text-align: center; padding-bottom: 3rem;">
+  <a href="https://drive.google.com/file/d/18VyCbfICkIolYrWYYfdd-hF9U5kTKZnr/view?usp=drivesdk" download>
+    <button>Download Resume</button>
+  </a>
+</section>
+
+<footer>
+  &copy; 2025 Agalya. Designed and developed with passion.
+</footer>
+
+</body>
+</html>
